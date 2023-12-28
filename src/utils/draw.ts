@@ -1,13 +1,13 @@
 // 確率を指定
-const PROBABILITY = 0.1;
+const PROBABILITY = 1;
 
 export const draw = () => {
   // 0から1未満のランダムな数を生成
   const rand = Math.random();
 
   if (rand < PROBABILITY) {
-    return "当たり";
+    return "hit";
   } else {
-    return "はずれ";
+    return "lose";
   }
 };

@@ -1,0 +1,77 @@
+@keyframes leftMove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -420px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes centerMove {
+  0% {
+    top: -500px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+@keyframes rightMove {
+  0% {
+    top: -800px;
+  }
+  50% {
+    top: -400px;
+  }
+  100% {
+    top: -800px;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  z-index: 30;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  /* background: red; */
+}
+
+.wrap {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  z-index: 30;
+  overflow: hidden;
+  display: flex;
+  /* background: red; */
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.numListLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: leftMove 3s linear infinite;
+}
+
+.numListCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: centerMove 2.8s linear infinite;
+}
+
+.numListRight {
+  position: absolute;
+  right: 0;
+  animation: rightMove 2.2s linear infinite;
+}
