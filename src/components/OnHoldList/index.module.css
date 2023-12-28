@@ -1,0 +1,73 @@
+.list {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+@keyframes sphereWhite {
+  50% {
+    box-shadow: 0 0 15px 12px red;
+  }
+}
+
+@keyframes sphereRed {
+  50% {
+    box-shadow: 0 0 15px 12px red;
+  }
+}
+
+@keyframes sphereRed {
+  50% {
+    box-shadow: 0 0 15px 12px red;
+  }
+}
+
+.sphereWhite {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 35% 25%, #fff, white);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 8px white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sphereBlue {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 35% 25%, #fff, blue);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 8px blue;
+  animation: sphereRed 1s linear infinite;
+}
+
+.sphereGreen {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 35% 25%, #fff, green);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 8px green;
+  transform: translate(-50%, -50%);
+}
+
+.sphereRed {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 35% 25%, #fff, red);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 8px red;
+  animation: sphereRed 1.5s linear infinite;
+}
+
+.sphereGold {
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at 35% 25%, #fff, yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 8px yellow;
+  transform: translate(-50%, -50%);
+}
